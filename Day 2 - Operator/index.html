@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Day 2 - Operator</title>
+</head>
+<body>
+    <script>
+        // Volume Bola
+
+        const phi = 3.14;
+        let r = 12;
+
+        let volume = 3 / 4 * phi * r * r^3;
+
+        document.writeln("Volume bola = " + volume);
+        document.writeln("<br>");
+
+        // Menghitung Nilai Kelulusan
+        const khd = 0.1;
+        const kuis = 0.3;
+        const uts = 0.3;
+        const uas = 0.3;
+
+        let nilai_khd = 90;
+        let nilai_kuis = 80;
+        let nilai_uts = 80;
+        let nilai_uas = 10;
+
+        let rata2 = khd * nilai_khd + kuis * nilai_kuis + uts * nilai_uts + uas * nilai_uas;
+
+        if (rata2 >= 80) {
+            document.writeln("Selamat kamu lulus! nilai kamu " + rata2);
+        } else if (rata2 >= 60) {
+            document.writeln("Yahh kamu ngulang! nilai kamu " + rata2);
+        } else {
+            document.writeln("Kamu tidak lulus, nilai kamu " + rata2);
+        }
+
+    </script>
+</body>
+</html>
